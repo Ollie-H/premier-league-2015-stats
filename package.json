@@ -30,6 +30,7 @@
     "gulp-angular-htmlify": "^2.3.0",
     "gulp-ng-html2js": "^0.2.0",
     "gulp-rename": "^1.2.2",
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "angular-ui-router": "~0.2.15"
   }
 }

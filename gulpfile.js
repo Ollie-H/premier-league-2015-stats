@@ -50,7 +50,7 @@ gulp.task('compress', function() {
 });
 
 gulp.task('scripts', function() {
-    return browserify('./src/js/script.js')  
+    return browserify('./src/js/app.js')  
       .bundle()
       .pipe(source('script.js'))
       .pipe(gulp.dest('./dist'))
@@ -61,7 +61,7 @@ gulp.task('serve-and-watch', function (){
     // browserSync.init({
     //     proxy: "local.angular.com"
     // });
-    gulp.watch(['./src/js/script.js'], ['scripts']);
+    gulp.watch(['./src/js/**/*.js'], ['scripts']);
     gulp.watch(['./src/sass/style.scss'], ['styles']);
     gulp.watch(['./index.html'], ['scripts']);
     

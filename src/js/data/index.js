@@ -1,39 +1,39 @@
 module.exports = {
       teams: [
             {
-                  team: 'Arsenal',
+                  name: 'Arsenal',
                   players: require('./arsenal')
             },
             {
-                  team: 'Chelsea',
+                  name: 'Chelsea',
                   players: require('./chelsea')
             },
             {
-                  team: 'Leicester',
+                  name: 'Leicester',
                   players: require('./leicester')
             },
             {
-                  team: 'Liverpool',
+                  name: 'Liverpool',
                   players: require('./liverpool')
             },
             {
-                  team: 'Manchester City',
+                  name: 'Manchester City',
                   players: require('./manCity')
             },
             {
-                  team: 'Manchester United',
+                  name: 'Manchester United',
                   players: require('./manUnited')
             },
             {
-                  team: 'Southampton',
+                  name: 'Southampton',
                   players: require('./southampton')
             },
             {
-                  team: 'Swansea',
+                  name: 'Swansea',
                   players: require('./swansea')
             },
             {
-                  team: 'Tottenham',
+                  name: 'Tottenham',
                   players: require('./tottenham')
             }
       ]
