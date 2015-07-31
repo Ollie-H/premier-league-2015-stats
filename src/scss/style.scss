@@ -1,0 +1,276 @@
+body{
+
+	background: #e4e4e4;
+	color: #333;
+	font-family: Droid Sans;
+	font-size: 12px;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+p{	
+	font-style: 10px;
+}
+
+.col{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border-right: 1px solid #000;
+
+		&:nth-child(2){
+			position: fixed;
+			left: 50%;
+		}
+}
+
+.player-nav{
+	width: 100%;
+	top: 0;
+	background: #fff;
+
+		&__option{
+
+			width: (99.93%/3);
+			float: left;
+
+			select,
+			input{
+				-webkit-appearance: none;
+				width: 100%;
+			    border-radius: 0;
+			    background: #fff;
+			    outline: 0;
+			    border: 0;
+			    height: 30px;
+			    padding: 5px;
+				border-right: 1px solid #000;
+			}
+
+			&:nth-child(2){
+				margin-right: 0;
+			}
+		}
+}
+
+.player-data{
+	width: 100%;
+
+		&__table{
+			width: 100%;
+			table-layout: fixed;
+
+				tr{
+					cursor: pointer;
+
+					td{
+						text-align: center;
+						cursor:pointer;
+					}
+					td:nth-child(1){
+						text-align: left;
+					}
+
+					&:nth-child(odd){
+						background: darken(#e4e4e4, 20%);
+						color: #333;
+					}
+
+					&:hover{
+						background: #97a71d;
+						color: #fff;
+					}
+				}
+
+				td{
+					padding: 5px;
+					border-right: 1px solid #000;
+					border-bottom: 1px solid #000;
+				}
+		}
+}
+
+.player-info{
+
+	padding: 50px;
+
+		&__profile{
+		    position: relative;
+		    width: 150px;
+		    height: 150px;
+		    background: url(/src/images/loading.gif) center no-repeat #555;
+		    margin: 0 auto 30px auto;
+		    border-radius: 50%;
+		    overflow: hidden;
+		    top: 10px;
+		    display: block;
+
+				.player-info__image{
+					position: absolute;
+					left: 0;
+					top:0;
+					width: 100%;
+					height: 100%;
+					opacity: 0;
+					background-size: cover;
+					background-position: top center;
+					border-radius: 50%;
+    				overflow: hidden;
+				}
+
+				&.is-loaded{
+					.player-info__image{
+						opacity: 1;
+					}
+				}
+		}
+
+		&__meta{
+			text-align: center;
+		}
+
+}
+
+.player__stat{
+
+	width: 33%;
+	height: 80px;
+	float: left;
+	text-align: center;
+	margin-top: 40px;
+
+		&:before {
+			content: "";
+			display: inline-block;
+			vertical-align: middle;
+			height: 100%;
+		}
+
+		h2, img,.inner{
+			display: inline-block;
+			vertical-align: middle;	
+		}
+
+		h2{
+			padding-left: 10px;
+			font-size: 3em;
+		}
+
+		img{
+			width: 50px;
+		}
+
+		p{
+			display: block;
+			vertical-align: bottom;
+			font-size: small;
+			color: #666;
+		}
+}
+
+.radial-progress {
+
+	$circle-size: 170px;
+	$circle-background: #fff;
+	$circle-color: #97a71d;
+	$inset-size: 90px;
+	$inset-color: #fbfbfb;
+	$transition-length: 1s;
+	$shadow: 6px 6px 10px rgba(0,0,0,0.2);
+	$percentage-color: #97a71d;
+	$percentage-font-size: 22px;
+	$percentage-text-width: 57px;
+
+	margin: 0 auto 30px auto;
+	width:  $circle-size;
+	height: $circle-size;
+
+	background-color: $circle-background;
+	border-radius: 50%;
+	.circle {
+		overflow: hidden;
+		.mask, .fill, .shadow {
+			width:    $circle-size;
+			height:   $circle-size;
+			position: absolute;
+			border-radius: 50%;
+		}
+		.shadow {
+			box-shadow: $shadow inset;
+		}
+		.mask, .fill {
+			transition: transform $transition-length;
+			border-radius: 50%;
+		}
+		.mask {
+			clip: rect(0px, $circle-size, $circle-size, $circle-size/2);
+			.fill {
+				clip: rect(0px, $circle-size/2, $circle-size, 0px);
+				background-color: $circle-color;
+			}
+		}
+	}
+	.inset {
+		width:       $inset-size;
+		height:      $inset-size;
+		position:    absolute;
+		margin-left: ($circle-size - $inset-size)/2;
+		margin-top:  ($circle-size - $inset-size)/2;
+
+		background-color: $inset-color;
+		border-radius: 50%;
+		box-shadow: $shadow;
+		.percentage {
+			height:   $percentage-font-size;
+			width:    $percentage-text-width;
+			overflow: hidden;
+
+			position: absolute;
+			top:      ($inset-size - $percentage-font-size) / 2;
+			left:     ($inset-size - $percentage-text-width) / 2;
+
+			line-height: 1;
+			.numbers { 
+				margin-top: -$percentage-font-size;
+				transition: width $transition-length;
+				span {
+					width:          $percentage-text-width;
+					display:        inline-block;
+					vertical-align: top;
+					text-align:     center;
+					font-weight:    800;
+					font-size:      $percentage-font-size;
+					font-family:    "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+					color:          $percentage-color;
+				}
+			}
+		}
+	}
+
+	$increment: 180deg / 100;
+	@for $i from 0 through 100 {
+		&[data-progress="#{$i}"] {
+			.circle {
+				.mask.full, .fill {
+					transform: rotate($increment * $i);
+				}	
+				.fill.fix {
+					transform: rotate($increment * $i * 2);
+				}
+			}
+			.inset .percentage .numbers {
+				width: $i * $percentage-text-width + $percentage-text-width;
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,109 @@
+<div class="player-info">
+
+    
+    <div class="radial-progress" data-progress={{player.ratingPercent}}>
+        <div class="circle">
+            <div class="mask full">
+                <div class="fill"></div>
+            </div>
+            <div class="mask half">
+                <div class="fill"></div>
+                <div class="fill fix"></div>
+            </div>
+            <div class="player-info__profile" ng-class="{'is-loaded': player.image}">
+                <div class="player-info__image" ng-style="{'background-image':'url('+player.image+')'}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="player-info__meta">
+        <h3>Name: {{player.name}}</h3>
+        <h3>Position: {{player.position}}</h3>
+        <h3>Club: {{player.teamName}}</h3>
+        <h3>Age: {{player.age}}</h3>
+        <h3>Height: {{player.height}}cm</h3>
+    </div>
+
+    <div class="player__infographics">
+
+        <div class="player__stat">
+                    
+            <img src="src/images/ball.png" />
+            <h2>{{player.rating}}</h2>
+            <p>Overall rating</p>
+
+        </div>
+
+        <div class="player__stat">
+                    
+            <img src="src/images/goals.png" />
+            <h2>{{player.goals}}</h2>
+            <p>Goals</p>
+
+        </div>
+
+        <div class="player__stat">
+                
+            <img src="src/images/mom.png">
+            <h2>{{player.man_of_the_match}}</h2>
+            <p>Man of the match awards</p>
+
+        </div>
+
+        <div class="player__stat">
+                
+            <img src="src/images/yellow_cards.png">
+            <h2>{{player.yellow_cards}}</h2>
+            <p>Bookings</p>
+
+        </div>
+
+
+        <div class="player__stat">
+               
+            <img src="src/images/red_cards.png" />
+            <h2>{{player.red_cards}}</h2>
+            <p>Sending's off</p>
+
+        </div>
+
+
+        <div class="player__stat">
+                
+            <img src="src/images/timer20.png" />
+            <h2>{{player.mins_played}}</h2>
+            <p>Minutes played</p>
+            
+
+        </div>
+
+        <div class="player__stat">
+                
+            <img src="src/images/shots_per_game.png">
+            <h2>{{player.shots_per_game}}</h2>
+            <p>Shots per game</p>
+
+        </div>
+
+
+        <div class="player__stat">
+                
+            <img src="src/images/headers.png">
+            <h2>{{player.aerial_won_per_game}}</h2>
+            <p>Header's won per game</p>
+
+        </div>
+
+        <div class="player__stat">
+                
+            <img src="src/images/passing.png">
+            <h2>{{player.passes_success}}</h2>
+            <p>Successful passes per game</p>
+
+        </div>
+        
+
+    </div>
+
+</div>
