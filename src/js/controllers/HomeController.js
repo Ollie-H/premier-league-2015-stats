@@ -1,14 +1,17 @@
 
 var Teams = function($scope, PlayerService) {
-        
-    $scope.teams = PlayerService.getData();
 
-    $scope.HandleTeamChange = function(){
+    $scope.teams = PlayerService.getTeams();
+    $scope.positions = ['Goalkeeper', 'Defender', 'Midfielder', 'Forward'];
+    $scope.players = PlayerService.getPlayers();
+    $scope.currentPlayer = $scope.players[0];
 
-    	console.log(arguments);
+    $scope.handlePlayerChange = function(){
+
+    	$scope.currentPlayer = this.player;
 
     }
 
 };
 
-module.exports = Teams; 
+module.exports = Teams;  

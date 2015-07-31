@@ -402,9 +402,9 @@ module.exports = {
         },
         {
             "guid": 802,
-            "name": "Mousa DembÃ©lÃ©",
+            "name": "Mousa Dembélé",
             "first_name": "Mousa",
-            "last_name": "DembÃ©lÃ©",
+            "last_name": "Dembélé",
             "is_active": true,
             "team_id": 10,
             "height": 185,
@@ -553,8 +553,8 @@ module.exports = {
         {
             "guid": 10416,
             "name": "Paulinho",
-            "first_name": "JosÃ© Paulo",
-            "last_name": "Bezerra Maciel JÃºnior",
+            "first_name": "José Paulo",
+            "last_name": "Bezerra Maciel Junior",
             "is_active": false,
             "team_id": 10,
             "height": 181,

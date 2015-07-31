@@ -10,8 +10,8 @@ var Routes = function($routeProvider, $locationProvider){
 			.when('/', 
     		{
     			controller: 'HomeController',
-    			templateUrl: 'src/js/partials/test1.html',
-    		})
+    			templateUrl: 'src/js/partials/home.html',
+    		}) 
 			.when('/test', 
     		{
     			controller: 'SimpleController',

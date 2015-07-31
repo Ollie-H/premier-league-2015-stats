@@ -24,7 +24,7 @@ module.exports = {
             "shots_per_game": 0.19,
             "aerial_won_per_game": 2.24,
             "passes_success": 85.38
-        },
+        }, 
         {
             "guid": 10336,
             "name": "Wilfried Bony",
@@ -102,7 +102,7 @@ module.exports = {
         },
         {
             "guid": 8453,
-            "name": "Federico FernÃ¡ndez",
+            "name": "Federico Fernandez",
             "first_name": "Federico",
             "last_name": "Fernandez",
             "is_active": true,
@@ -427,8 +427,8 @@ module.exports = {
         },
         {
             "guid": 3038,
-            "name": "BafÃ©timbi Gomis",
-            "first_name": "BafÃ©timbi",
+            "name": "Bafétimbi Gomis",
+            "first_name": "Bafétimbi",
             "last_name": "Gomis",
             "is_active": true,
             "team_id": 35,
@@ -577,8 +577,8 @@ module.exports = {
         },
         {
             "guid": 8285,
-            "name": "NÃ©lson Oliveira",
-            "first_name": "NÃ©lson Miguel",
+            "name": "Nélson Oliveira",
+            "first_name": "Nélson Miguel",
             "last_name": "Castro Oliveira",
             "is_active": true,
             "team_id": 35,

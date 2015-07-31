@@ -2,6 +2,7 @@
 
     'use strict';
 
-    app.service('PlayerService', require('./playerService'));
+    app.service('PlayerService', require('./PlayerService'));
+    app.service('FlickrService', require('./FlickrService'));
 
 })();      

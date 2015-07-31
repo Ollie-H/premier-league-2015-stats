@@ -2,9 +2,9 @@ module.exports = {
     "items": [
         {
             "guid": 8074,
-            "name": "Alexis SÃ¡nchez",
+            "name": "Alexis Sanchez", 
             "first_name": "Alexis",
-            "last_name": "SÃ¡nchez",
+            "last_name": "Sanchez",
             "is_active": true,
             "team_id": 2,
             "height": 168,
@@ -52,9 +52,9 @@ module.exports = {
         },
         {
             "guid": 6512,
-            "name": "Mesut Ã–zil",
+            "name": "Mesut Ozil",
             "first_name": "Mesut",
-            "last_name": "Ã–zil",
+            "last_name": "Ozil",
             "is_active": true,
             "team_id": 2,
             "height": 183,
@@ -252,7 +252,7 @@ module.exports = {
         },
         {
             "guid": 7,
-            "name": "HÃ©ctor BellerÃ­n",
+            "name": "Hector Bellerín",
             "first_name": "Hector",
             "last_name": "Bellerin",
             "is_active": true,

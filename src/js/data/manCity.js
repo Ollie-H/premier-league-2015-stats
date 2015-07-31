@@ -2,9 +2,9 @@ module.exports = {
     "items": [
         {
             "guid": 2870,
-            "name": "Sergio AgÃ¼ero",
+            "name": "Sergio Aguero",
             "first_name": "Sergio",
-            "last_name": "AgÃ¼ero",
+            "last_name": "Aguero",
             "is_active": true,
             "team_id": 9,
             "height": 173,
@@ -52,9 +52,9 @@ module.exports = {
         },
         {
             "guid": 474,
-            "name": "Yaya TourÃ©",
+            "name": "Yaya Touré",
             "first_name": "Gnegneri Yaya",
-            "last_name": "TourÃ©",
+            "last_name": "Touré",
             "is_active": true,
             "team_id": 9,
             "height": 189,
@@ -77,8 +77,8 @@ module.exports = {
         },
         {
             "guid": 448,
-            "name": "GaÃ«l Clichy",
-            "first_name": "GaÃ«l",
+            "name": "Gael Clichy",
+            "first_name": "Gael",
             "last_name": "Clichy",
             "is_active": true,
             "team_id": 9,
@@ -277,8 +277,8 @@ module.exports = {
         },
         {
             "guid": 5678,
-            "name": "JesÃºs Navas",
-            "first_name": "JesÃºs",
+            "name": "Jesus Navas",
+            "first_name": "Jesus",
             "last_name": "Navas",
             "is_active": true,
             "team_id": 9,

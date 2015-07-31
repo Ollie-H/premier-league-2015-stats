@@ -102,9 +102,9 @@ module.exports = {
         },
         {
             "guid": 11681,
-            "name": "Sadio ManÃ©",
+            "name": "Sadio Mané",
             "first_name": "Sadio",
-            "last_name": "ManÃ©",
+            "last_name": "Mané",
             "is_active": true,
             "team_id": 8,
             "height": 175,
